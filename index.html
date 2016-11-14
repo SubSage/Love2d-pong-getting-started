@@ -42,18 +42,18 @@ This site has everything you’ll likely need to reference <a href="https://love
 <p>Code
 I remember first learning to program, everything I did was output/shown on the console. Most of you have had similar experiences so far. Many of us did. The thing we need to create in order to get some visuals on the screen is a window. That’s the actual technical jargon. Wanna use a different programming language to make a game? Lookup “how to draw/make window in ” (love2d).  We’re using Love2d which is built on the programming language named Lua. Let’s get our first game window up. </p>
 
-<p><code></code></p>
+<p><script src="https://gist.github.com/SubSage/997dfdd16b828dd0a74f153bac15a8bf.js"></script></p>
 
 <p>Awesome! We have a window and the world hasn’t ended, congratulations! Let’s add to our game little by little from here. The player should be able to control something, a rectangle for the paddle. Let’s create a paddle, with a location on the screen and give the player the ability to move it around by controlling the location of the paddle.
 </p>
-
+<p><script src="https://gist.github.com/SubSage/5bcaf701133e6fbb5d91302a29fbabf2.js"></script></p>
 <p>Simple! We’ve defined a location for the player paddle and at each update check if the paddle should move left or right. Simple enough, let’s go ahead and add an enemy paddle along with a ball that moves around.</p>
 
-<p></p>
+<p><script src="https://gist.github.com/SubSage/d984c9fb68d357aaf3c246f7f3d07a89.js"></script></p>
 
 <p>Cool, we went ahead and let the player control the horizontal movement of both paddles for now, let’s just keep things simple. The ball moves around and when it collides with a wall, it’s moved back and given a new velocity in the opposite direction. Moving forward, let’s add more to our game, perhaps we could keep a score for the player, let’s also make sure the ball collides properly with the player paddle. </p>
 
-<p></p>
+<p><script src="https://gist.github.com/SubSage/6a826e6ee9a3f4faa75fa77032931fce.js"></script></p>
 
 <p>Hopefully you notice some extra changes here, we were using hard numbers in some cases to describe where the player paddle should be, the size of the paddle as well. It would serve us better to make these variables declared in the very beginning, we now have more control over them as well.</p>
 
